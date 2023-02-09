@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #89acba;
+}
+
+.app-intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vw;
+}
+.app-intro-container .port-title h1 {
+  position: relative;
+  margin-bottom: 4vw;
+  color: #232464;
+}
+.app-intro-container .port-title h1:after {
+  content: "";
+  position: absolute;
+  bottom: -0.5vw;
+  left: 20%;
+  right: 20%;
+  height: 0.2vw;
+  background-color: #232464;
+}
+.app-intro-container .port-title h1:before {
+  content: "";
+  position: absolute;
+  bottom: -1.5vw;
+  left: 35%;
+  right: 35%;
+  height: 0.15vw;
+  background-color: #232464;
+}
+.app-intro-container .img-main-container {
+  display: flex;
+  justify-content: center;
+  height: 15vw;
+}
+.app-intro-container .img-main-container img {
+  width: 25%;
+  border-radius: 50%;
+}
+.app-intro-container .img-main-container .img1, .app-intro-container .img-main-container .img3 {
+  align-self: end;
+}
+.app-intro-container .img-main-container .img2 {
+  align-self: start;
+}
+.app-intro-container .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 2vw;
+}
+.app-intro-container .home-container label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 1vw;
+}
+.app-intro-container .home-container label input {
+  border: 2px solid #232464;
+  border-radius: 4px;
+  color: #232464;
+  background-color: #4B5398;
+}
+.app-intro-container .home-container label .input1 {
+  width: 60%;
+  height: 3vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+.app-intro-container .home-container label .input1:focus {
+  border: 2px solid #232464;
+  outline: none;
+}
+.app-intro-container .home-container label .input2 {
+  cursor: pointer;
+  width: 30%;
+  height: 3vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #89acba;
+}
+
+$primary-color:#232464;
+$secondary-color:#4B5398;
+
+@mixin double-underline {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -.5vw;
+    left: 20%;
+    right: 20%;
+    height: 0.2vw;
+    background-color: $primary-color;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -1.5vw;
+    left: 35%;
+    right: 35%;
+    height: 0.15vw;
+    background-color: $primary-color;
+  }
+}
+
+.app-intro-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vw;
+  .port-title{
+    h1{
+      @include double-underline;
+      margin-bottom: 4vw;
+      color: $primary-color;
+    }
+  }
+  .img-main-container{
+    display: flex;
+    justify-content: center;
+    height: 15vw;
+    img{
+      width: 25%;
+      border-radius: 50%;
+    }
+    .img1, .img3{
+      align-self: end;
+    }
+    .img2{
+      align-self: start;
+    }
+  }
+  .home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 2vw;
+    label{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 1vw;
+      input{
+        border: 2px solid $primary-color;
+        border-radius: 4px;
+        color: $primary-color;
+        background-color: $secondary-color;
+      }
+      .input1{
+        width: 60%;
+        height: 3vw;
+        text-align: center;
+        font-size: 1.5vw;
+      }
+      .input1:focus{
+        border: 2px solid $primary-color;
+        outline: none;
+      }
+      .input2{
+        cursor: pointer;
+        width: 30%;
+        height: 3vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+      }
+    }
+  }
+}
