@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piedra Papel Tijera</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="img/Logo.ico" type="image/x-icon">
 </head>
 <body>
-  <div class="app-intro-container active">
+  <div id="app-intro-container" class="app-intro-container">
     <div class="port-title">
       <h1>BIENVENIDO A PIEDRA PAPEL O TIJERA!</h1>
     </div>
@@ -20,18 +21,63 @@
     <div class="home-container">
       <label for="name">
         <input class="input1" type="text" id="name" placeholder="Igresa tu nombre">
+        <p id="msj-nombre" class="active">Ingresa un nombre válido</p>
       </label>
       <label for="start-btn">
         <input class="input2" type="button" value="COMENZAR" id="start-btn">
       </label>
     </div>
   </div>
-  <div class="app-game-container">
-    <section class="game-title"></section>
-    <section class="player"></section>
-    <section class="result"></section>
-    <section class="pc"></section>
-    <section class="score"></section>
+  <div id="app-game-container" class="app-game-container active">
+    <section class="game-title">
+      <div class="port-title">
+        <h1>PIEDRA PAPEL O TIJERA!</h1>
+      </div>
+    </section>
+    <div class="game-player-pc">
+      <section class="player">
+        <h2 id="player-name"></h2>
+        <div class="img-game-container">
+          <img id="img1-player" src="img/piedra.png" alt="piedra">
+          <img id="img2-player" src="img/papel.png" alt="papel">
+          <img id="img3-player" src="img/tijera.png" alt="tijera">
+        </div>
+      </section>
+      <section class="result-sec">
+        <div id="player-choice" class="player-choice">
+          <img class="img1-player active" id="img1-p" src="img/piedra.png" alt="piedra">
+          <img class="img2-player active" id="img2-p" src="img/papel.png" alt="papel">
+          <img class="img3-player active" id="img3-p" src="img/tijera.png" alt="tijera">
+        </div>
+        <div class="result">
+          <h3 id="win-msj" class="win"></h3>
+        </div>
+        <div id="pc-choice" class="pc-choice">
+          <img class="img1-pc active" id="img1-pc" src="img/piedra.png" alt="piedra">
+          <img class="img2-pc active" id="img2-pc" src="img/papel.png" alt="papel">
+          <img class="img3-pc active" id="img3-pc" src="img/tijera.png" alt="tijera">
+        </div>
+      </section>
+      <section class="pc">
+        <h2>PC</h2>
+        <div class="img-game-container">
+          <img src="img/piedra.png" alt="piedra">
+          <img src="img/papel.png" alt="papel">
+          <img src="img/tijera.png" alt="tijera">
+        </div>
+      </section>
+    </div>
+    <section class="score">
+      <div class="game-score">
+        <h2 id="score">SCORE:</h2>
+      </div>
+      <div class="exit-game">
+        <label for="exit-btn">
+          <input id="exit-btn" class="exit-btn" type="button" value="SALIR">
+        </label>
+      </div>
+    </section>
   </div>
+  <script src="js/logic.js"></script>
 </body>
 </html>
