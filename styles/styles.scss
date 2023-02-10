@@ -325,6 +325,35 @@ $secondary-color:#4B5398;
       width: 100%;
     }
   }
+  .app-intro-container{
+    .port-title{
+      height: 15%;
+      h1{
+        font-size: 3.5vw;
+      }
+    }
+    .img-main-container{
+      height: 25%;
+    }
+    .home-container{
+      height: 35%;
+      label{
+        height: 30%;
+        .input1{
+          height: 100%;
+          font-size: 2.5vw;
+        }
+        .input2{
+          height: 100%;
+          font-size: 1.8vw;
+          width: 50%;
+        }
+      }
+      .start-btn{
+        height: 50%;
+      }
+    }
+  }
   .app-game-container{
     .score{
       width: 60%;

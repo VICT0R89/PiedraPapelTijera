@@ -315,6 +315,33 @@ body {
   .app-intro-container .home-container {
     width: 100%;
   }
+  .app-intro-container .port-title {
+    height: 15%;
+  }
+  .app-intro-container .port-title h1 {
+    font-size: 3.5vw;
+  }
+  .app-intro-container .img-main-container {
+    height: 25%;
+  }
+  .app-intro-container .home-container {
+    height: 35%;
+  }
+  .app-intro-container .home-container label {
+    height: 30%;
+  }
+  .app-intro-container .home-container label .input1 {
+    height: 100%;
+    font-size: 2.5vw;
+  }
+  .app-intro-container .home-container label .input2 {
+    height: 100%;
+    font-size: 1.8vw;
+    width: 50%;
+  }
+  .app-intro-container .home-container .start-btn {
+    height: 50%;
+  }
   .app-game-container .score {
     width: 60%;
   }
